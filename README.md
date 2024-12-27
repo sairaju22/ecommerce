@@ -32,7 +32,7 @@ An eCommerce web application built using Flask that provides a platform for user
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/ecommerce-app.git
+   git clone https://github.com/sairaju22/ecommerce-app.git
    cd ecommerce-app
 2.Install the required Python dependencies:
 pip install -r requirements.txt
