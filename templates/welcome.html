@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Commerce Welcome Page</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('https://watermark.lovepik.com/photo/40194/8316.jpg_wh1200.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        overflow: hidden;
+    }
+
+    .header {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: #f8f9fa;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+
+    .content {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 40px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .content h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        color: #e3c1f9;
+    }
+
+    .content p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        color: #d9d9d9;
+    }
+
+    .button {
+        display: inline-block;
+        background-color: #6c5ce7;
+        color: white;
+        padding: 15px 30px;
+        font-size: 18px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .button:hover {
+        background-color: #4834d4;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+        .content h1 {
+            font-size: 36px;
+        }
+        .content p {
+            font-size: 16px;
+        }
+        .button {
+            font-size: 16px;
+            padding: 12px 25px;
+        }
+    }
+    
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/29/05/10/shopping-1866047_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    overflow: hidden;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">Welcome to Our E-Commerce Website!</div>
+
+<div class="container">
+    <div class="content">
+        <h1>Shop the Latest Trends</h1>
+        <p>Discover exclusive deals and the newest arrivals for all your shopping needs. Start your journey with us today and experience online shopping like never before.</p>
+        <a href="{{url_for('home1')}}" class="button">Explore Now</a>
+    </div>
+</div>
+
+<div class="footer">&copy; 2024 E-Commerce Website. All Rights Reserved.</div>
+
+</body>
+</html>
