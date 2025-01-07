@@ -10,10 +10,15 @@ RAZORPAY_KEY_ID='rzp_test_aM892uPmKeLaL6'
 RAZORPAY_KEY_SECRET='GJgCFKxPv49TBxEp5sn08aRt'
 client=razorpay.Client(auth=(RAZORPAY_KEY_ID,RAZORPAY_KEY_SECRET))
 from itemid import itemidotp
-mydb=mysql.connector.connect(host='localhost',
-user='root',
-password='root',
-db='ecommerce')
+db=os.environ['RDS_DB_NAME']
+user=os.environ['RDS_USERNAME']
+password=os.environ['RDS_PASSWORD']
+host=os.environ['RDS_HOSTNAME']
+port=os.environ['RDS_PORT']
+# mydb=mysql.connector.connect(host='localhost',
+# user='root',
+# password='root',
+# db='ecommerce')
 app=Flask(__name__)
 app.secret_key='sai'
 @app.route('/')
